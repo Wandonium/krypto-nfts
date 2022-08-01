@@ -233,3 +233,107 @@ nav, #hero, #analytics {
     font-size: 16px;
     text-align: center;
 }
+
+#call-to-action > div {
+    background: linear-gradient(278.25deg, #AAD9D9 -5.54%, #4040C5 102.54%);
+    border-radius: 30px;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.action-title {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 5rem;
+}
+
+.center {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.black {
+    background-color: #000;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 5rem;
+}
+
+footer > div > ul {
+    margin-top: 1rem;
+}
+
+footer > div > ul > li > a {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+
+.f-logo {
+    grid-column: 1/3;
+}
+
+.f-logo > a {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.f-title {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.krypto {
+    grid-column: 3/5;
+}
+
+.market {
+    grid-column: 5/7;
+}
+
+.contact {
+    grid-column: 7/9;
+}
+
+.newsletter {
+    grid-column: 9/13;
+}
+
+.newsletter > p {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
