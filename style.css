@@ -9,6 +9,7 @@
 body {
     background-color: #000035;
     color: #fff;
+    overflow-x: hidden;
 }
 
 .content {
@@ -35,11 +36,11 @@ body {
 .bg-c2 {
     position: absolute;
     top: 250px;
-    right: -21rem;
+    left: 80vw;
     background-color: #AAD9D9;
 }
 
-nav, #hero {
+nav, #hero, #analytics {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,7 +82,7 @@ nav, #hero {
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
     font-size: 67px;
-    width: 25rem;
+    width: 25vw;
     text-transform: capitalize;
     line-height: 100%;
     margin-bottom: 2rem;
@@ -140,4 +141,95 @@ nav, #hero {
     background-color: #46417B;
     opacity: 60%;
     border-radius: 7px;
+}
+
+.heading2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 57px;
+    width: 32vw;
+    text-transform: capitalize;
+    line-height: 100%;
+    margin-bottom: 2rem;
+}
+
+.t-color {
+    color: #AAD9D9;
+}
+
+#get-app {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.test-headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.test-headings > .heading2 {
+    width: 35vw;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.test-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 0;
+}
+
+.t-card {
+    background-color: #2A275F;
+    border-radius: 20px;
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.t-img {
+    border-radius: 50%;
+    position: relative;
+    top: -4rem;
+    width: 140px;
+    height: 140px;
+    background-color: #2A275F;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+}
+
+.test-img1 {
+    background-image: url("imgs/test-profile1.png");
+}
+
+.test-img2 {
+    background-image: url("imgs/test-profile2.png");
+    
+}
+
+.test-img3 {
+    background-image: url("imgs/test-profile3.png");
+}
+
+.t-title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+.t-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
 }
