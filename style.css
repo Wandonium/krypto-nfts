@@ -13,7 +13,7 @@ body {
 }
 
 .content {
-    max-width: 75vw;
+    max-width: 75rem;
     min-height: 100vh;
     margin: auto;
 }
@@ -36,15 +36,53 @@ body {
 .bg-c2 {
     position: absolute;
     top: 250px;
-    left: 80vw;
+    right: -350px;
     background-color: #AAD9D9;
 }
 
-nav, #hero, #analytics {
+.nav, #hero, #analytics {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 5rem 0;
+}
+
+.hamburger {
+    position: relative;
+    display: none;
+    width: 35px;
+    /* height: 35px; */
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger > .h-bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active .h-bar {
+    opacity: 0;
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
 }
 
 .nav-list {
@@ -82,7 +120,7 @@ nav, #hero, #analytics {
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
     font-size: 67px;
-    width: 25vw;
+    width: 25rem;
     text-transform: capitalize;
     line-height: 100%;
     margin-bottom: 2rem;
@@ -96,11 +134,10 @@ nav, #hero, #analytics {
     margin-bottom: 2rem;
 }
 
-.primary {
+.primary, .secondary {
     display: inline-block;
     text-decoration: none;
     padding: 1rem 3rem;
-    background-color: #8D8DDA;
     font-family: 'Outfit', sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -109,18 +146,13 @@ nav, #hero, #analytics {
     border-radius: 40px;
 }
 
+.primary {
+    background-color: #8D8DDA;
+}
+
 .secondary {
-    display: inline-block;
-    text-decoration: none;
-    padding: 1rem 3rem;
     background-color: transparent;
     border: 1px solid #88D0D1;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-    border-radius: 40px;
     margin-left: 2rem;
 }
 
@@ -146,8 +178,8 @@ nav, #hero, #analytics {
 .heading2 {
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
-    font-size: 57px;
-    width: 32vw;
+    font-size: 4rem;
+    width: 32rem;
     text-transform: capitalize;
     line-height: 100%;
     margin-bottom: 2rem;
@@ -159,9 +191,14 @@ nav, #hero, #analytics {
 
 #get-app {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 5rem;
+    padding-left: 3vw;
+}
+
+#get-app > .right {
+    margin: auto;
 }
 
 .test-headings {
@@ -185,7 +222,7 @@ nav, #hero, #analytics {
 .t-card {
     background-color: #2A275F;
     border-radius: 20px;
-    width: 23vw;
+    width: 23rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -274,6 +311,7 @@ footer {
 
 footer > div > ul {
     margin-top: 1rem;
+    list-style: none;
 }
 
 footer > div > ul > li > a {
@@ -311,6 +349,7 @@ footer > div > ul > li > a {
     line-height: 20px;
     text-transform: capitalize;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .krypto {
@@ -347,7 +386,7 @@ footer > div > ul > li > a {
     background: #2A275F;
     border-radius: 70px;
     border: none;
-    width: 345px;
+    width: 26rem;
     height: 60px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -371,7 +410,7 @@ footer > div > ul > li > a {
     border-radius: 40px;
     position: relative;
     top: -3.8rem;
-    left: 15rem;
+    left: 18.2rem;
     font-family: 'Outfit', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -382,4 +421,178 @@ footer > div > ul > li > a {
     text-transform: uppercase;
     color: #FFFFFF;
     border: none;
+}
+
+/* On screens that are 1240px or less, set ... */
+@media screen and (max-width: 1240px) {
+    .content {
+      max-width: 90%;
+    }
+
+    .heading2 {
+        font-size: 3rem;
+        width: 27rem;
+    }
+
+    .t-card {
+        width: 17rem;
+    }
+
+    .email > input {
+        width: 19rem;
+    }
+
+    #submit {
+        left: 11.2rem;
+    }
+}
+
+/* On screens that are 900px or less, set ... */
+@media screen and (max-width: 900px) {
+    .content {
+        max-width: 95%;
+    }
+
+    .nav-list > li {
+        margin-left: 1.5rem;
+    }
+
+    .heading {
+        width: 20rem;
+        font-size: 50px;
+    }
+
+    .heading2 {
+        width: 25rem;
+        font-size: 3rem;
+    }
+
+    .text {
+        width: 20rem;
+    }
+
+    .primary, .secondary {
+        padding: .5rem 1.5rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .test-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .t-card {
+        width: 25rem;
+        padding: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .f-logo {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+/* On screens that are 600px or less, set ... */
+@media screen and (max-width: 600px) {
+
+    .content {
+        max-width: 90%;
+    }
+
+    #hero, #get-app {
+        flex-direction: column-reverse;
+    }
+
+    #hero .right, #get-app .right {
+        margin-bottom: 3rem;
+    }
+
+    .heading {
+        width: 89vw;
+        font-size: 10vw;
+    }
+
+    .bar img {
+        width: 20%;
+        height: auto;
+    }
+
+    #analytics {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .hamburger, .logo {
+        display: block;
+        z-index: 100;
+    }
+
+    .mobile-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        min-height: 100vh;
+        z-index: 98;
+        background-color: #000035;
+        padding-top: 150px;
+        transition: 0.4s;
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+    .mobile-nav a {
+        display: block;
+        text-align: center;
+        text-transform: capitalize;
+        width: 100%;
+        max-width: 200px;
+        padding: 12px 16px;
+        margin: 0 auto 16px;
+        background-color: #4040C5;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .mobile-nav a:hover {
+        background-color: #46417B;
+    }
+
+    .test-headings .heading2 {
+        width: 63vw;
+    }
+
+    .heading2 {
+        font-size: 10vw;
+        width: 50vw;
+    }
+
+    .text {
+        width: 75vw;
+    }
+
+    .t-card {
+        width: 85vw;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
