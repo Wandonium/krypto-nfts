@@ -336,4 +336,50 @@ footer > div > ul > li > a {
     font-size: 22px;
     line-height: 28px;
     color: #FFFFFF;
+    padding-left: 10px;
+}
+
+.email {
+    margin-top: 2rem;
+}
+
+.email > input {
+    background: #2A275F;
+    border-radius: 70px;
+    border: none;
+    width: 345px;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    color: #FFFFFF;
+    opacity: 0.65;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #8D8DDA;
+    border-radius: 40px;
+    position: relative;
+    top: -3.8rem;
+    left: 15rem;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
 }
