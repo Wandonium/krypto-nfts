@@ -23,10 +23,10 @@ To reproduce the landing page of the website as closely as possible and implemen
 
 ### Links
 
-- Solution URL: [Solution on Github](https://github.com/Wandonium/krypto-nfts)
-- Live Site URL: [Live Site on Github pages](https://wandonium.github.io/krypto-nfts/)
-- UI/UX Design Tutorial: [Design Tutorial on YouTube](https://www.youtube.com/watch?v=HZuk6Wkx_Eg&list=PLpUfqJajYd0zmf2tleu3W48yVW1qj1FfW&index=3)
-- Figma Complete Design: [UI/UX Design on Figma](https://www.figma.com/file/2Mu3kLpLpmAWIE0MdbhTZ5/Flux---Figma-Build-Tutorial-Remix?node-id=0%3A1)
+1. Solution URL: [Solution on Github](https://github.com/Wandonium/krypto-nfts)
+2. Live Site URL: [Live Site on Github pages](https://wandonium.github.io/krypto-nfts/)
+3. UI/UX Design Tutorial: [Design Tutorial on YouTube](https://www.youtube.com/watch?v=HZuk6Wkx_Eg&list=PLpUfqJajYd0zmf2tleu3W48yVW1qj1FfW&index=3)
+4. Figma Complete Design: [UI/UX Design on Figma](https://www.figma.com/file/2Mu3kLpLpmAWIE0MdbhTZ5/Flux---Figma-Build-Tutorial-Remix?node-id=0%3A1)
 
 ## My process
 
@@ -34,10 +34,10 @@ Break the web page into parts e.g. navbar, showcase etc. Then build each part as
 
 ### Built with
 
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- JS window.onload function
+1. CSS custom properties
+2. Flexbox
+3. CSS Grid
+4. JS window.onload function
 
 
 ### What I learned
@@ -82,6 +82,6 @@ How to create a hamburger navigation menu using a html button and css pseudo-ele
 
 ## Author
 
-- Website - [Hillary Wando](http://hillarywando.com/)
-- Codepen - [@Wandonium](https://codepen.io/wandonium)
-- Twitter - [@hillarywando](https://www.twitter.com/hillarywando)
+1. Website - [Hillary Wando](http://hillarywando.com/)
+2. Codepen - [@Wandonium](https://codepen.io/wandonium)
+3. Twitter - [@hillarywando](https://www.twitter.com/hillarywando)
